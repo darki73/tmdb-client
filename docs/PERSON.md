@@ -1,77 +1,70 @@
-# Network Endpoint
 
+# Person Endpoint
 ## Initialize Client
 ```ts
 import { TMDBClient } from 'moviedatabase-client';
 const tmdb = new TMDBClient('API_KEY');
 ```
 
-#### Get Details
+
+#### Get the primary person details by id.
 [View original method documentation](https://developers.themoviedb.org/3/people/get-person-details)
 ```ts
-const data = tmdb.person.details(ersonID: number, parameters: QueryParameters = {});
+const data = tmdb.person.details(personID: number, parameters: QueryParameters = {});
 // This method call will return instance of Promise<PersonDetailsResponse>
-``` 
-
-#### Get Changes
+```
+#### Get the changes for a person. By default only the last 24 hours are returned.
 [View original method documentation](https://developers.themoviedb.org/3/people/get-person-changes)
 ```ts
 const data = tmdb.person.changes(personID: number, parameters: QueryDateLimiter = {});
 // This method call will return instance of Promise<PersonChangesResponse>
 ```
-
-#### Get Movie Credits
+#### Get the movie credits for a person.
 [View original method documentation](https://developers.themoviedb.org/3/people/get-person-movie-credits)
 ```ts
 const data = tmdb.person.movieCredits(personID: number);
 // This method call will return instance of Promise<PersonMovieCreditsResponse>
 ```
-
-#### Get TV Credits
+#### Get the tv credits for a person.
 [View original method documentation](https://developers.themoviedb.org/3/people/get-person-tv-credits)
 ```ts
 const data = tmdb.person.tvCredits(personID: number);
 // This method call will return instance of Promise<PersonTVCreditsResponse>
 ```
-
-#### Get Combined Credits
+#### Get the movie and TV credits together in a single response.
 [View original method documentation](https://developers.themoviedb.org/3/people/get-person-combined-credits)
 ```ts
 const data = tmdb.person.combinedCredits(personID: number);
 // This method call will return instance of Promise<PersonCombinedCreditsResponse>
 ```
-
-#### Get External IDs
+#### Get the external ids for a person.
 [View original method documentation](https://developers.themoviedb.org/3/people/get-person-external-ids)
 ```ts
 const data = tmdb.person.externalIDs(personID: number);
 // This method call will return instance of Promise<PersonExternalIDResponse>
 ```
-
-#### Get Images
+#### Get the images for a person.
 [View original method documentation](https://developers.themoviedb.org/3/people/get-person-images)
 ```ts
 const data = tmdb.person.images(personID: number);
 // This method call will return instance of Promise<PersonImagesResponse>
 ```
-
-#### Get Tagged Images
+#### Get the images that this person has been tagged in.
 [View original method documentation](https://developers.themoviedb.org/3/people/get-tagged-images)
 ```ts
-const data = tmdb.person.taggedImages(personID: number)
+const data = tmdb.person.taggedImages(personID: number);
 // This method call will return instance of Promise<PersonTaggedImagesResponse>
 ```
-
-#### Get Translations
+#### Get a list of translations that have been created for a person.
 [View original method documentation](https://developers.themoviedb.org/3/people/get-person-translations)
 ```ts
 const data = tmdb.person.translations(personID: number);
 // This method call will return instance of Promise<PersonTranslationsResponse>
 ```
-
-#### Get Latest
+#### Get the most newly created person.
 [View original method documentation](https://developers.themoviedb.org/3/people/get-latest-person)
 ```ts
 const data = tmdb.person.latest();
 // This method call will return instance of Promise<PersonDetailsResponse>
 ```
+

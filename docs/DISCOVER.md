@@ -1,24 +1,23 @@
 # Discover Endpoint
-
 ## Initialize Client
 ```ts
 import { TMDBClient } from 'moviedatabase-client';
 const tmdb = new TMDBClient('API_KEY');
 ```
 
-#### Movie Discover
+
+#### Discover movies by different types of data like average rating, number of votes, genres and certifications.
 [View original method documentation](https://developers.themoviedb.org/3/discover/movie-discover)
 ```ts
 const data = tmdb.discover.movie(parameters: QueryParameters = {});
 // This method call will return instance of Promise<DiscoverMovieResponse>
-``` 
-
-#### TV Discover
+```
+#### Discover TV shows by different types of data like average rating, number of votes, genres, the network they aired on and air dates.
 [View original method documentation](https://developers.themoviedb.org/3/discover/tv-discover)
 ```ts
 const data = tmdb.discover.tv(parameters: QueryParameters = {});
 // This method call will return instance of Promise<DiscoverTVResponse>
-```    
+```
 
 
 **Discover endpoint also supports filtering.**   

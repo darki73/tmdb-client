@@ -62,10 +62,10 @@ export class TMDBService {
     private endpointConfiguration: EndpointConfiguration;
 
     /**
-     * Certifications Endpoint Instance
+     * certification Endpoint Instance
      * @var CertificationEndpoint
      */
-    public certifications: CertificationEndpoint;
+    public certification: CertificationEndpoint;
 
     /**
      * Changes Endpoint Instance
@@ -199,7 +199,7 @@ export class TMDBService {
      * Load all endpoints as class properties
      */
     private bootEndpoints(): TMDBService {
-        this.certifications = new CertificationEndpoint(this.endpointConfiguration);
+        this.certification  = new CertificationEndpoint(this.endpointConfiguration);
         this.changes = new ChangesEndpoint(this.endpointConfiguration);
         this.company = new CompanyEndpoint(this.endpointConfiguration);
         this.configuration = new ConfigurationEndpoint(this.endpointConfiguration);

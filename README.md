@@ -17,7 +17,7 @@ const tmdb = new TMDBClient('API_KEY');
 public constructor(apiKey: string, secure: boolean = true, version: number = 3, host: string = 'api.themoviedb.org')
 ```
 
-
+### Examples for specific endpoints you can find the in the [docs](https://github.com/darki73/tmdb-client/tree/master/docs) folder of this project.
 
 [ico-code-quality]: https://scrutinizer-ci.com/g/darki73/tmdb-client/badges/quality-score.png?b=master
 [ico-build-status]: https://scrutinizer-ci.com/g/darki73/tmdb-client/badges/build.png?b=master
