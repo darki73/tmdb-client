@@ -1,0 +1,1 @@
+{"version":3,"file":"credit.js","sourceRoot":"","sources":["../../src/endpoints/credit.ts"],"names":[],"mappings":";;AAAA,iDAA8C;AAM9C,MAAa,MAAO,SAAQ,2BAAY;IAM7B,KAAK,CAAC,OAAO,CAAC,QAAgB;QACjC,OAAO,IAAI,CAAC,cAAc,CAAC,UAAU,QAAQ,EAAE,CAAC,CAAC;IACrD,CAAC;CAEJ;AAVD,wBAUC"}

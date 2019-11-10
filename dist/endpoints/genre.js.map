@@ -1,0 +1,1 @@
+{"version":3,"file":"genre.js","sourceRoot":"","sources":["../../src/endpoints/genre.ts"],"names":[],"mappings":";;AAAA,iDAA8C;AAM9C,MAAa,KAAM,SAAQ,2BAAY;IAO5B,KAAK,CAAC,KAAK;QACd,OAAO,IAAI,CAAC,cAAc,CAAC,kBAAkB,CAAC,CAAC;IACnD,CAAC;IAOM,KAAK,CAAC,EAAE;QACX,OAAO,IAAI,CAAC,cAAc,CAAC,eAAe,CAAC,CAAC;IAChD,CAAC;CAEJ;AApBD,sBAoBC"}
